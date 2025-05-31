@@ -175,3 +175,7 @@ cython_debug/
 
 # project analysis info
 analisis_de_viabilidad/
+
+# GitHub API token 
+.githubtoken/
+
