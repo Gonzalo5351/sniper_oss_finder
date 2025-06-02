@@ -1,8 +1,8 @@
 # src/reporter.py
 from typing import List, Dict
-from persister import save_followed_repos
+from src.persister import save_followed_repos
 
-def display_report(repos: List[Dict]):
+def display_report(repos: List[Dict], interactive: bool=True):
     print("\n=== Open Source Opportunities ===\n")
 
     for idx, repo in enumerate(repos, start=1):
