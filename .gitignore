@@ -179,3 +179,5 @@ analisis_de_viabilidad/
 # GitHub API token 
 .githubtoken/
 
+# Followed repo folder
+data/
