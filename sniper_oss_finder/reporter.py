@@ -1,6 +1,6 @@
 # src/reporter.py
 from typing import List, Dict
-from src.persister import save_followed_repos
+from sniper_oss_finder.persister import save_followed_repos
 
 def display_report(repos: List[Dict], interactive: bool=True):
     print("\n=== Open Source Opportunities ===\n")

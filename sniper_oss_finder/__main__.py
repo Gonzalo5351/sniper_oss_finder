@@ -1,10 +1,10 @@
 # src/__main__.py
 
 import typer
-from src.fetcher import GitHubFetcher
-from src.analyzer import RepositoryAnalyzer
-from src.reporter import display_report
-from src.persister import save_followed_repos
+from sniper_oss_finder.fetcher import GitHubFetcher
+from sniper_oss_finder.analyzer import RepositoryAnalyzer
+from sniper_oss_finder.reporter import display_report
+from sniper_oss_finder.persister import save_followed_repos
 
 app = typer.Typer()
 

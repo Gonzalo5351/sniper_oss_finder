@@ -1,0 +1,28 @@
+[project]
+name = "sniper-oss-finder"
+version = "0.1.0"
+description = "A precision tool to detect open source repositories from mission-aligned companies and bypass noisy recruitment systems."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+
+authors = [
+  { name = "Gonzalo", email = "your_email@example.com" }
+]
+
+dependencies = [
+  "requests >=2.25.0",
+  "typer >=0.9.0",
+]
+
+[project.scripts]
+sniper-oss-finder = "sniper_oss_finder.__main__:app"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sniper_oss_finder"]
+exclude = ["tests", "data", "analisis_de_viabilidad"]
